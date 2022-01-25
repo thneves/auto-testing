@@ -1,5 +1,5 @@
 Given('that I access espn website') do
-  visit "www.espn.com.br"
+  visit "https://www.espn.com.br/"
 end
 
 When('I hover on futebol') do
