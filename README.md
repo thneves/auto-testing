@@ -2,6 +2,8 @@
 
 Little project to get started with Cucumber testing framework and BDD.
 
+The projects tests the access to the [Premier League](https://www.espn.com.br/futebol/liga/_/nome/eng.1/premier-league) page on [Espn](https://espn.com.br/) website
+
 ## Requirements
 
  - Ruby
