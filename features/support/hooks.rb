@@ -11,7 +11,6 @@ def add_screenshot(scenario)
   home_cenario = home_cenario.gsub(' ','_').downcase!
   screenshot = "log/screenshots/#{home_cenario}.png"
   page.save_screenshot(screenshot)
-  embed(screenshot, 'image/png', 'Print maroto :)')
 end
 
 def add_browser_logs
@@ -26,7 +25,6 @@ def add_browser_logs
   # remove warnings and info messages
   logs.reject! { |line| ['WARNING', 'INFO'].include?(line.first) }
   logs.any? == true
-  embed(time_now.strftime('%Y-%m-%d-%H-%M-%S' + "\n") + ( "Current URL: " + current_url + "\n") + logs.join("\n"), 'text/plain', 'BROWSER ERROR')
 end
 
 at_exit do
