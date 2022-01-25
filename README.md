@@ -31,6 +31,8 @@ Clone this repo, run `bundle`, and then run `cucumber` on your terminal.
 
 Check the results and the generated report html files and screenshots.
 
+<img src="./cucumber.png">
+
 
 
 
