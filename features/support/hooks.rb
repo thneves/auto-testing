@@ -1,5 +1,5 @@
 After do |scenario|
-  add_secrenshot(scenario)
+  add_screenshot(scenario)
 
   if scenario.failed?
     add_browser_logs
@@ -8,7 +8,7 @@ end
 
 def add_screenshot(scenario)
   home_cenario = scenario.name.gsub(/[^A-Za-z0-9]/, '')
-  home_cenario = nome_cenario.gsub(' ','_').downcase!
+  home_cenario = home_cenario.gsub(' ','_').downcase!
   screenshot = "log/screenshots/#{home_cenario}.png"
   page.save_screenshot(screenshot)
   embed(screenshot, 'image/png', 'Print maroto :)')

@@ -1,5 +1,5 @@
 ---
-default: -p html -p bbd -p json
+default: -p html -p bdd -p json
 html: --format html --out=features.html
 dot: --format progress
 bdd: --format pretty
